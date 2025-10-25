@@ -1,0 +1,23 @@
+[package]
+name = "merkletree"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+hex = "x"
+serde = { version = "x", features = ["derive"] }
+serde_json  = "x"
+
+[dev-dependencies]
+criterion = "x"
+
+[[bench]]
+name = "merkletree"
+harness = false
+
+[profile.release]
+opt-level = 3
+lto = true
+
+
+
